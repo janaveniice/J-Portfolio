@@ -3,7 +3,7 @@
         "projectName": "AVConnect",
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
         "imageUrl": "assets/images/test.jpg",
-        "tags": ["UI/UX Design", "Wireframe", "Usability Testing"],
+        "tags": ["UI/UX Design", "Wireframe"],
         "repositoryUrl": "https://github.com/janaveniice/AVConnect"
     },
     {
@@ -24,7 +24,7 @@
         "projectName": "Netflix Management System",
         "projectDescription": "A web applications for users to manage their watchlist, watch history, and recommendations.",
         "imageUrl": "assets/images/test.jpg",
-        "tags": ["SQL", "NoSQL", "Flask"],
+        "tags": ["Database Management"],
         "repositoryUrl": "https://github.com/janaveniice/Netflix-Management-System"
     }
 ]
