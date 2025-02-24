@@ -37,7 +37,7 @@
         "imageUrl": "assets/images/test.jpg",
         "tags": ["Machine Learning", "Decision Trees"],
         "techStack": ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "Numpy", "Matplotlib"],
-        "repositoryUrl": ""
+        "repositoryUrl": "https://github.com/janaveniice/TTT-ML"
     },
     {
         "projectName": "Sleep Score Prediction Model",
@@ -45,6 +45,6 @@
         "imageUrl": "assets/images/test.jpg",
         "tags": ["Machine Learning", "Nueral Networks"],
         "techStack": ["Brain.js", "Node.js"],
-        "repositoryUrl": ""
+        "repositoryUrl": "https://github.com/janaveniice/SleepScore-ML"
     }
 ]
