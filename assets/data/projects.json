@@ -30,5 +30,21 @@
         "tags": ["Database Management"],
         "techStack": ["HTML", "TailwindCSS", "Flask", "JavaScript", "MongoDB", "MariaDB"],
         "repositoryUrl": "https://github.com/janaveniice/Netflix-Management-System"
+    },
+    {
+        "projectName": "Tic-Tac-Toe Prediction Model",
+        "projectDescription": "With an accuracy of 90.6%, this machine learning model uses descision trees to challenge a player in a game of Tic-Tac-Toe.",
+        "imageUrl": "assets/images/test.jpg",
+        "tags": ["Machine Learning", "Decision Trees"],
+        "techStack": ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "Numpy", "Matplotlib"],
+        "repositoryUrl": ""
+    },
+    {
+        "projectName": "Sleep Score Prediction Model",
+        "projectDescription": "This ML model uses linear regression to predict a user's sleep score based on their sleep data with an accuracy of 99.8%",
+        "imageUrl": "assets/images/test.jpg",
+        "tags": ["Machine Learning", "Nueral Networks"],
+        "techStack": ["Brain.js", "Node.js"],
+        "repositoryUrl": ""
     }
 ]
