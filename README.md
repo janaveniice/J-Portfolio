@@ -14,4 +14,4 @@ This project was deployed using Netlify.
 
 ## 📬 Contact Me
 Email: janaveniice@gmail.com <br>
-Linkedin: www.linkedin.com/in/janaveniice <br>
+LinkedIn: www.linkedin.com/in/janaveniice <br>
