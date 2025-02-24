@@ -4,20 +4,23 @@
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
         "imageUrl": "assets/images/test.jpg",
         "tags": ["UI/UX Design", "Wireframe"],
+        "techStack": ["HTML", "CSS", "Flask", "MongoDB"],
         "repositoryUrl": "https://github.com/janaveniice/AVConnect"
     },
     {
         "projectName": "DigitalFNA",
         "projectDescription": "A Financial Needs Analysis (FNA) application for users to assess their financial health and plan for their future.",
         "imageUrl": "assets/images/digitalfna.png",
-        "tags": ["UI/UX Design", "Wireframe", "Vue"],
+        "tags": ["UI/UX Design", "Wireframe"],
+        "techStack": ["HTML", "TailwindCSS", "Vue", "TypeScript", "Playwright"],
         "repositoryUrl": ""
     },
     {
         "projectName": "BeSage",
         "projectDescription": "A learning management system (LMS) application for students and teachers to interact and share knowledge.",
         "imageUrl": "assets/images/besage.png",
-        "tags": ["UI/UX Design", "Wireframe", "Django"],
+        "tags": ["UI/UX Design", "Wireframe"],
+        "techStack": ["HTML", "CSS", "Django", "MariaDB"],
         "repositoryUrl": ""
     },
     {
@@ -25,6 +28,7 @@
         "projectDescription": "A web applications for users to manage their watchlist, watch history, and recommendations.",
         "imageUrl": "assets/images/test.jpg",
         "tags": ["Database Management"],
+        "techStack": ["HTML", "TailwindCSS", "Flask", "JavaScript", "MongoDB", "MariaDB"],
         "repositoryUrl": "https://github.com/janaveniice/Netflix-Management-System"
     }
 ]

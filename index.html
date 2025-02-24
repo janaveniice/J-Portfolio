@@ -131,11 +131,13 @@
     document.addEventListener("DOMContentLoaded", async function () {
         try {
             const response = await fetch("./assets/data/projects.json"); // Load JSON file
-            console.log(response);
             const projects = await response.json(); // Parse JSON
             const container = document.getElementById("projects-container");
     
-            projects.forEach(project => {
+            // Use slice to get the first 6 records
+            const limitedProjects = projects.slice(0, 6);
+    
+            limitedProjects.forEach(project => {
                 const projectHTML = `
                     <article class="bg-white rounded-2xl p-4 h-full w-full">
                         <!-- Image -->
@@ -157,7 +159,15 @@
                             <p class="text-2xl mt-3 font-bold break-words">${project.projectName}</p>
                             <p class="mt-2 break-words">${project.projectDescription}</p>
                         </section>
-    
+                        
+                        <section class="mt-2">
+                            <p class="break-words"><strong>Tech Stack:</strong>
+                                ${project.techStack.map((tech, index) => `
+                                    <span>${tech}${index < project.techStack.length - 1 ? ',' : ''}</span>
+                                `).join('')}
+                            </p>
+                        </section>
+
                         <!-- Github button (only show if repositoryUrl exists) -->
                         ${project.repositoryUrl ? `
                             <section class="mt-4 flex justify-end">
@@ -175,5 +185,5 @@
             console.error("Error loading projects:", error);
         }
     });
-    </script>
+</script>
 </html>
