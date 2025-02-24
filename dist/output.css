@@ -876,6 +876,10 @@ video {
   padding-right: 0.5rem;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-sans {
   font-family: Open Sans, sans-serif;
 }
@@ -915,12 +919,37 @@ video {
   line-height: 1rem;
 }
 
+.text-xl\/8 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .italic {
   font-style: italic;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-black {
@@ -1002,6 +1031,11 @@ video {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
