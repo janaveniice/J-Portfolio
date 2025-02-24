@@ -2,15 +2,15 @@
     {
         "projectName": "AVConnect",
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
-        "imageUrl": "assets/images/test.jpg",
-        "tags": ["UI/UX Design", "Wireframe"],
+        "imageUrl": "assets/images/AVConnect.png",
+        "tags": ["UI/UX Design", "Usability Testing"],
         "techStack": ["HTML", "CSS", "Flask", "MongoDB"],
         "repositoryUrl": "https://github.com/janaveniice/AVConnect"
     },
     {
         "projectName": "DigitalFNA",
         "projectDescription": "A Financial Needs Analysis (FNA) application for users to assess their financial health and plan for their future.",
-        "imageUrl": "assets/images/digitalfna.png",
+        "imageUrl": "assets/images/DigitalFNA.png",
         "tags": ["UI/UX Design", "Wireframe"],
         "techStack": ["HTML", "TailwindCSS", "Vue", "TypeScript", "Playwright"],
         "repositoryUrl": ""
@@ -18,7 +18,7 @@
     {
         "projectName": "BeSage",
         "projectDescription": "A learning management system (LMS) application for students and teachers to interact and share knowledge.",
-        "imageUrl": "assets/images/besage.png",
+        "imageUrl": "assets/images/BeSage.png",
         "tags": ["UI/UX Design", "Wireframe"],
         "techStack": ["HTML", "CSS", "Django", "MariaDB"],
         "repositoryUrl": ""
@@ -26,7 +26,7 @@
     {
         "projectName": "Netflix Management System",
         "projectDescription": "A web applications for users to manage their watchlist, watch history, and recommendations.",
-        "imageUrl": "assets/images/test.jpg",
+        "imageUrl": "assets/images/dbg4.png",
         "tags": ["Database Management"],
         "techStack": ["HTML", "TailwindCSS", "Flask", "JavaScript", "MongoDB", "MariaDB"],
         "repositoryUrl": "https://github.com/janaveniice/Netflix-Management-System"
@@ -34,7 +34,7 @@
     {
         "projectName": "Tic-Tac-Toe Prediction Model",
         "projectDescription": "With an accuracy of 90.6%, this machine learning model uses descision trees to challenge a player in a game of Tic-Tac-Toe.",
-        "imageUrl": "assets/images/test.jpg",
+        "imageUrl": "assets/images/ttt-ml.png",
         "tags": ["Machine Learning", "Decision Trees"],
         "techStack": ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "Numpy", "Matplotlib"],
         "repositoryUrl": "https://github.com/janaveniice/TTT-ML"
@@ -42,8 +42,8 @@
     {
         "projectName": "Sleep Score Prediction Model",
         "projectDescription": "This ML model uses linear regression to predict a user's sleep score based on their sleep data with an accuracy of 99.8%",
-        "imageUrl": "assets/images/test.jpg",
-        "tags": ["Machine Learning", "Nueral Networks"],
+        "imageUrl": "assets/images/default.jpg",
+        "tags": ["Machine Learning", "Neural Networks"],
         "techStack": ["Brain.js", "Node.js"],
         "repositoryUrl": "https://github.com/janaveniice/SleepScore-ML"
     }

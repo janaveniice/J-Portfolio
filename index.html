@@ -78,7 +78,7 @@
         </section>
 
         <!-- Portfolio Section -->
-        <section class="bg-primary py-20 lg:py-20 px-auto text-white">
+        <section class="bg-secondary py-20 lg:py-20 px-auto text-black">
             <!-- Title -->
             <section class="w-10/12 mx-auto space-y-2 lg:space-y-6">
                 <p class="text-3xl md:text-3xl font-bold">Portfolio</p>
@@ -88,7 +88,7 @@
             </section>
 
             <!-- Cards section -->
-            <section id="projects-container" class="w-10/12 mx-auto max-h-min mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-black items-stretch">
+            <section id="projects-container" class="w-10/12 mx-auto max-h-min mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-black items-stretch">
                 <!-- Projects will be dynamically inserted here -->
             </section>
         </section>
@@ -190,7 +190,7 @@
     
             limitedProjects.forEach(project => {
                 const projectHTML = `
-                    <article class="bg-white rounded-2xl p-4 h-full w-full">
+                    <article class="bg-white rounded-2xl p-4 h-full w-full shadow-md">
                         <!-- Image -->
                         <section class="w-full h-[250px] flex items-center justify-center overflow-hidden rounded-xl">
                             <img src="${project.imageUrl}" alt="${project.projectName}" class="w-full h-full object-cover">
