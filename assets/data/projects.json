@@ -1,5 +1,13 @@
 [
     {
+        "projectName": "CarbonLeap",
+        "projectDescription": "A cloud-based application that helps users track their carbon footprint",
+        "imageUrl": "assets/images/carbonleap.png",
+        "tags": ["UI/UX Design", "Machine Learning"],
+        "techStack": ["React", "HTML/CSS", "scikit-learn", "MySQL", "Docker", "Kubernetes"],
+        "repositoryUrl": ""
+    },
+    {
         "projectName": "AVConnect",
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
         "imageUrl": "assets/images/AVConnect.png",
