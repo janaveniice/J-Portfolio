@@ -2,7 +2,7 @@
     {
         "projectName": "CarbonLeap",
         "projectDescription": "A cloud-based application that helps users track their carbon footprint",
-        "imageUrl": "assets/images/carbonleap.png",
+        "imageUrl": "assets/images/carbonleap/carbonleap.png",
         "tags": ["UI/UX Design", "Machine Learning"],
         "techStack": ["React", "HTML/CSS", "scikit-learn", "MySQL", "Docker", "Kubernetes"],
         "repositoryUrl": ""
@@ -10,7 +10,7 @@
     {
         "projectName": "AVConnect",
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
-        "imageUrl": "assets/images/AVConnect.png",
+        "imageUrl": "assets/images/avconnect/AVConnect.png",
         "tags": ["UI/UX Design", "Usability Testing"],
         "techStack": ["HTML", "CSS", "Flask", "MongoDB"],
         "repositoryUrl": "https://github.com/janaveniice/AVConnect"
@@ -18,7 +18,7 @@
     {
         "projectName": "DigitalFNA",
         "projectDescription": "A Financial Needs Analysis (FNA) application for users to assess their financial health and plan for their future.",
-        "imageUrl": "assets/images/DigitalFNA.png",
+        "imageUrl": "assets/images/digitalfna/DigitalFNA.png",
         "tags": ["UI/UX Design", "Wireframe"],
         "techStack": ["HTML", "TailwindCSS", "Vue", "TypeScript", "Playwright"],
         "repositoryUrl": ""
@@ -26,7 +26,7 @@
     {
         "projectName": "BeSage",
         "projectDescription": "A learning management system (LMS) application for students and teachers to interact and share knowledge.",
-        "imageUrl": "assets/images/BeSage.png",
+        "imageUrl": "assets/images/besage/BeSage.png",
         "tags": ["UI/UX Design", "Wireframe"],
         "techStack": ["HTML", "CSS", "Django", "MariaDB"],
         "repositoryUrl": ""
@@ -34,7 +34,7 @@
     {
         "projectName": "Netflix Management System",
         "projectDescription": "A web applications for users to manage their watchlist, watch history, and recommendations.",
-        "imageUrl": "assets/images/dbg4.png",
+        "imageUrl": "assets/images/dbg4/dbg4.png",
         "tags": ["Database Management"],
         "techStack": ["HTML", "TailwindCSS", "Flask", "JavaScript", "MongoDB", "MariaDB"],
         "repositoryUrl": "https://github.com/janaveniice/Netflix-Management-System"
@@ -42,7 +42,7 @@
     {
         "projectName": "Tic-Tac-Toe Prediction Model",
         "projectDescription": "With an accuracy of 90.6%, this machine learning model uses descision trees to challenge a player in a game of Tic-Tac-Toe.",
-        "imageUrl": "assets/images/ttt-ml.png",
+        "imageUrl": "assets/images/ttt-ml/ttt-ml.png",
         "tags": ["Machine Learning", "Decision Trees"],
         "techStack": ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "Numpy", "Matplotlib"],
         "repositoryUrl": "https://github.com/janaveniice/TTT-ML"
