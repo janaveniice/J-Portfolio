@@ -3,6 +3,7 @@
         "projectName": "CarbonLeap",
         "projectDescription": "A cloud-based application that helps users track their carbon footprint",
         "imageUrl": "assets/images/carbonleap/carbonleap.png",
+        "images": ["../assets/images/carbonleap/screen-1.png", "../assets/images/carbonleap/screen-2.png", "../assets/images/carbonleap/screen-3.png"],
         "tags": ["UI/UX Design", "Machine Learning"],
         "techStack": ["React", "HTML/CSS", "scikit-learn", "MySQL", "Docker", "Kubernetes"],
         "repositoryUrl": ""
@@ -11,6 +12,7 @@
         "projectName": "AVConnect",
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
         "imageUrl": "assets/images/avconnect/AVConnect.png",
+        "images": ["../assets/images/avconnect/screen-1.png", "../assets/images/avconnect/screen-2.png", "../assets/images/avconnect/screen-3.png", "../assets/images/avconnect/screen-4.png"],
         "tags": ["UI/UX Design", "Usability Testing"],
         "techStack": ["HTML", "CSS", "Flask", "MongoDB"],
         "repositoryUrl": "https://github.com/janaveniice/AVConnect"
@@ -19,6 +21,7 @@
         "projectName": "DigitalFNA",
         "projectDescription": "A Financial Needs Analysis (FNA) application for users to assess their financial health and plan for their future.",
         "imageUrl": "assets/images/digitalfna/DigitalFNA.png",
+        "images": ["../assets/images/digitalfna/screen-1.png", "../assets/images/digitalfna/screen-2.png", "../assets/images/digitalfna/screen-3.png", "../assets/images/digitalfna/screen-4.png", "../assets/images/digitalfna/screen-5.png", "../assets/images/digitalfna/screen-6.png"],
         "tags": ["UI/UX Design", "Wireframe"],
         "techStack": ["HTML", "TailwindCSS", "Vue", "TypeScript", "Playwright"],
         "repositoryUrl": ""
@@ -27,6 +30,7 @@
         "projectName": "BeSage",
         "projectDescription": "A learning management system (LMS) application for students and teachers to interact and share knowledge.",
         "imageUrl": "assets/images/besage/BeSage.png",
+        "images": ["../assets/images/besage/screen-1.png", "../assets/images/besage/screen-2.png", "../assets/images/besage/screen-3.png"],
         "tags": ["UI/UX Design", "Wireframe"],
         "techStack": ["HTML", "CSS", "Django", "MariaDB"],
         "repositoryUrl": ""
@@ -35,22 +39,16 @@
         "projectName": "Netflix Management System",
         "projectDescription": "A web applications for users to manage their watchlist, watch history, and recommendations.",
         "imageUrl": "assets/images/dbg4/dbg4.png",
+        "images": ["../assets/images/dbg4/screen-1.png", "../assets/images/dbg4/screen-2.png", "../assets/images/dbg4/screen-3.png", "../assets/images/dbg4/screen-4.png"],
         "tags": ["Database Management"],
         "techStack": ["HTML", "TailwindCSS", "Flask", "JavaScript", "MongoDB", "MariaDB"],
         "repositoryUrl": "https://github.com/janaveniice/Netflix-Management-System"
     },
     {
-        "projectName": "Tic-Tac-Toe Prediction Model",
-        "projectDescription": "With an accuracy of 90.6%, this machine learning model uses descision trees to challenge a player in a game of Tic-Tac-Toe.",
-        "imageUrl": "assets/images/ttt-ml/ttt-ml.png",
-        "tags": ["Machine Learning", "Decision Trees"],
-        "techStack": ["Python", "Jupyter Notebook", "scikit-learn", "Pandas", "Numpy", "Matplotlib"],
-        "repositoryUrl": "https://github.com/janaveniice/TTT-ML"
-    },
-    {
         "projectName": "Sleep Score Prediction Model",
         "projectDescription": "This ML model uses linear regression to predict a user's sleep score based on their sleep data with an accuracy of 99.8%",
         "imageUrl": "assets/images/default.jpg",
+        "images": ["../assets/images/default.jpg"],
         "tags": ["Machine Learning", "Neural Networks"],
         "techStack": ["Brain.js", "Node.js"],
         "repositoryUrl": "https://github.com/janaveniice/SleepScore-ML"

@@ -22,8 +22,34 @@
         </a>
     </nav>
 
-    <main class="w-10/12 mx-auto my-20">
-        <p class="text-center">This page is under construction! We'll see you in a while!</p>
+    <main class="w-10/12 mx-auto mt-10 mb-10">
+        <!-- Title and Filter-->
+        <section class="flex justify-between">
+            <!-- Title and description -->
+            <section>
+                <h3 class="text-black font-bold text-4xl">My Projects</h3>
+                <p class="text-gray-200 text-lg mt-2 italic">View all my projects from Year 1 to Year 2</p>
+            </section>
+
+            <!-- Filter -->
+            <section>
+                <button id="filterToggle" class="bg-primary text-white px-4 py-2 rounded-xl flex">                      
+                    Filter
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                    </svg>
+                </button>
+            
+                <div id="filterDropdown" class="absolute right-0 mt-2 w-52 bg-white border border-gray-300 rounded-lg shadow-lg p-4 hidden space-y-2">
+                <!-- Tags will be injected here -->
+                </div>
+            </section>
+        </section>
+
+        <!-- Cards section -->
+        <section id="projects-container" class="mx-auto max-h-min mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 text-black items-stretch">
+            <!-- Projects will be dynamically inserted here -->
+        </section>
     </main>
 </body>
 
@@ -36,6 +62,126 @@
 
 <!-- Script -->
 <script>
+    // Get elements
+    const dropdown = document.getElementById('filterDropdown');
+    const filterToggle = document.getElementById('filterToggle');
+    const projectsContainer = document.getElementById('projects-container');
 
+    // Toggle the visibility of the dropdown when the button is clicked
+    filterToggle.addEventListener('click', () => {
+        dropdown.classList.toggle('hidden');
+    });
+
+    // Close the dropdown when the mouse leaves the dropdown area
+    dropdown.addEventListener('mouseleave', () => {
+        dropdown.classList.add('hidden');
+    });
+
+    // Show the dropdown when the mouse hovers over the button or dropdown area
+    filterToggle.addEventListener('mouseenter', () => {
+        dropdown.classList.remove('hidden');
+    });
+
+    filterToggle.addEventListener('mouseleave', () => {
+        dropdown.classList.add('hidden');
+    });
+
+    dropdown.addEventListener('mouseenter', () => {
+        dropdown.classList.remove('hidden');
+    });
+
+    // Load JSON data
+    fetch('../assets/data/projects.json')
+    .then(res => res.json())
+    .then(projects => {
+        const allTags = [...new Set(projects.flatMap(p => p.tags))];
+
+        // Create tag checkboxes for filtering
+        allTags.forEach(tag => {
+        const label = document.createElement('label');
+        label.className = "flex items-center gap-2 cursor-pointer rounded-lg";
+        label.innerHTML = `
+            <input type="checkbox" value="${tag}" class="tag-filter accent-primary">
+            ${tag}
+        `;
+        dropdown.appendChild(label);
+        });
+
+        // Toggle Dropdown visibility
+        filterToggle.addEventListener('click', () => {
+        dropdown.classList.toggle('hidden');
+        });
+
+        // Filter projects based on selected tags
+        const filterProjects = () => {
+        const checkedTags = [...document.querySelectorAll('.tag-filter:checked')].map(input => input.value);
+        const filteredProjects = projects.filter(project =>
+            checkedTags.length === 0 || project.tags.some(tag => checkedTags.includes(tag))
+        );
+        displayProjects(filteredProjects);
+        };
+
+        // Listen to changes on tag checkboxes
+        document.addEventListener('change', (e) => {
+        if (!e.target.classList.contains('tag-filter')) return;
+        filterProjects();
+        });
+
+        // Display all projects by default
+        displayProjects(projects);
+    });
+
+    // Function to render the projects as cards
+    function displayProjects(projects) {
+    projectsContainer.innerHTML = ''; // Clear previous cards
+
+    projects.forEach(project => {
+        const card = document.createElement('div');
+        card.className = "p-6 bg-white rounded-xl shadow hover:scale-105 transition duration-300";
+
+        card.innerHTML = `
+                    <article class="bg-white rounded-2xl p-4 h-full w-full shadow-md">
+                        <!-- Image -->
+                        <section class="w-full h-[50vh] flex items-center justify-center overflow-hidden rounded-xl">
+                            <img src="${project.images[0]}" alt="${project.projectName}" class="w-full h-full object-cover">
+                        </section>
+    
+                        <!-- Tags -->
+                        <section class="flex space-x-2 items-center mt-4 text-sm md:text-md">
+                            ${project.tags.map(tag => `
+                                <article class="bg-secondary text-white px-4 py-1 rounded-3xl items-center">
+                                    <p class="text-black font-bold">${tag}</p>
+                                </article>
+                            `).join('')}
+                        </section>
+    
+                        <!-- Project information -->
+                        <section>
+                            <p class="text-2xl mt-3 font-bold break-words">${project.projectName}</p>
+                            <p class="mt-2 break-words">${project.projectDescription}</p>
+                        </section>
+                        
+                        <section class="mt-2">
+                            <p class="break-words"><strong>Tech Stack:</strong>
+                                ${project.techStack.map((tech, index) => `
+                                    <span>${tech}${index < project.techStack.length - 1 ? ',' : ''}</span>
+                                `).join('')}
+                            </p>
+                        </section>
+
+                        <!-- Github button (only show if repositoryUrl exists) -->
+                        ${project.repositoryUrl ? `
+                            <section class="mt-4 flex justify-end">
+                                <a href="${project.repositoryUrl}" target="_blank" class="bg-secondary px-4 py-1 rounded-xl text-sm no-underline font-bold">
+                                    View on GitHub
+                                </a>
+                            </section>
+                        ` : ''}
+                    </article>
+                `;
+
+        projectsContainer.appendChild(card);
+    });
+    }
 </script>
 </html>
