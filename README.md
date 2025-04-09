@@ -12,7 +12,7 @@ Visit my portfolio [here](https://janaveniice.netlify.app/)
 ## 🚀 Deployment
 This project was deployed using Netlify.
 
-## Setup for Development
+## ⚙️ Setup for Development
 1. Download `Live Server` extension on VS Code
 2. Start TailwindCSS watcher
 ```
