@@ -9,6 +9,24 @@
         "repositoryUrl": ""
     },
     {
+        "projectName": "Rehab Mate",
+        "projectDescription": "Mobile application designed to support individuals recovering from injuries or surgeries using smartwatch technology, AI, and motion tracking",
+        "imageUrl": "assets/images/rehab-mate/rehab-mate.png",
+        "images": ["../assets/images/rehab-mate/rehab-mate.png"],
+        "tags": ["Machine Learning", "Mobile Development"],
+        "techStack": ["Android Studio", "ONNX Runtime", "scikit-learn"],
+        "repositoryUrl": "https://github.com/janaveniice/MAD-SleepProgressAI"
+    },
+    {
+        "projectName": "UWB LOS/NLOS Precise Localization",
+        "projectDescription": "Machine learning project leveraging UWB signals for precise localization. Developed a LOS/NLOS classifier and a distance estimation regression model, applying end-to-end data analytics processes like data preprocessing, mining, and analysis.",
+        "imageUrl": "assets/images/default.jpg",
+        "images": ["../assets/images/default.jpg"],
+        "tags": ["Machine Learning", "Data Analytics"],
+        "techStack": ["Jupyter Notebook", "Python", "scikit-learn"],
+        "repositoryUrl": ""
+    },
+    {
         "projectName": "AVConnect",
         "projectDescription": "A web community application for Autonomous Vehicle enthusiasts to connect and share their experiences.",
         "imageUrl": "assets/images/avconnect/AVConnect.png",
